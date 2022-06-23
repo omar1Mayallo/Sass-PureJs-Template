@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./assets/imgs/Logo.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is My Portfolio Using SASS & Pure js"
+    />
+    <title>Alex Smith Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <div class="light-box"></div>
+    <div class="nav-overlay"></div>
+    <div class="menu-icon">
+      <i class="fa-solid fa-bars fa-xl"></i>
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <header>
+      <nav class="navbar">
+        <div class="info-block">
+          <div class="img-container p-4">
+            <img src="./assets/imgs/profile-img.jpg" alt="profile_img" />
+            <h1>Alex Smith</h1>
+          </div>
+          <ul class="social-container my-1">
+            <li class="m-2 p-2 py-1"><i class="fa-brands fa-facebook"></i></li>
+            <li class="m-2 p-2 py-1"><i class="fa-brands fa-twitter"></i></li>
+            <li class="m-2 p-2 py-1"><i class="fa-brands fa-github"></i></li>
+            <li class="m-2 p-2 py-1"><i class="fa-brands fa-instagram"></i></li>
+            <li class="m-2 p-2 py-1"><i class="fa-brands fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <ul class="list-block">
+          <li>
+            <a class="nav-link active" href="#">
+              <i class="fa-solid fa-house"></i>Home
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#about">
+              <i class="fa-solid fa-user"></i>About</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#facts">
+              <i class="fa-solid fa-book"></i>Facts</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#resume"
+              ><i class="fa-solid fa-file"></i>Resume</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#portfolio"
+              ><i class="fa-solid fa-book-open"></i>Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#services"
+              ><i class="fa-solid fa-server"></i>Services</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">
+              <i class="fa-solid fa-phone"></i>Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="text-block p-2">
+          <h2>
+            Hello<br />
+            I'm Alex Smith
+          </h2>
+          <p>
+            I photograph very instinctively. I see how it is taken like that. I
+            do not follow certain styles, philosophies or teachers.
+          </p>
+          <button class="p-3 py-2">Get A Quote</button>
+        </div>
+      </main>
+    </header>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <section class="about container my-5" id="about">
+      <h3 class="sec-head">About</h3>
+      <p>
+        Since beginning my journey as a freelance designer nearly 10 years ago,
+        I've done remote work for agencies, consulted for startups, and
+        collaborated with talented people to create digital products for both
+        business and consumer use. I'm quietly confident, naturally curious, and
+        perpetually working on improving my chops one design problem at a time.
+      </p>
+      <div class="info-block row g-4">
+        <div class="img-identity col-md-5 col-12">
+          <img src="./assets/imgs/profile-img.jpg" alt="portfolio-img" />
+        </div>
+        <div class="personal-identity col-md-7 col-12">
+          <h4 class="person-head">UI/UX Designer & Web Developer.</h4>
+          <p class="italic">
+            Freelance Web Designer & Developer based in Galway, Ireland. Highly
+            experienced in designing & developing custom Wordpress websites.
+          </p>
+          <div class="identity-info row">
+            <div class="identity-list col-md-6 col-sm-12">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><span>Birthday:</span> 1 May 1995
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><span>Website:</span> www.example.com
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><span>Phone:</span> +123 456 7890
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><span>City:</span> New
+                  York, USA
+                </li>
+              </ul>
+            </div>
+            <div class="identity-list col-md-6 col-sm-12">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><span>Age:</span>
+                  30
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><span>Degree:</span> Master
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <span>Email:</span> email@example.com
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <span>Freelance:</span> Available
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            A portfolio can serve as a modern-day CV. It can help you access
+            tons of opportunities, showcase your work, inspire other developers
+            and also help you keep track of all the things you've been able to
+            achieve in your tech career.Since turning my passion into a career,
+            I’ve worked as a professional photographer in Germany, Australia and
+            Ireland.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <section class="facts container my-5" id="facts">
+      <h3 class="sec-head">Facts</h3>
+      <p>
+        Since beginning my journey as a freelance designer nearly 10 years ago,
+        I've done remote work for agencies, consulted for startups, and
+        collaborated with talented people to create digital products for both
+        business and consumer use. I'm quietly confident, naturally curious, and
+        perpetually working on improving my chops one design problem at a time.
+      </p>
+      <div class="facts-block row">
+        <div class="col-lg-3 col-6">
+          <div class="fact-item my-3">
+            <div class="fact-head-box">
+              <i class="fa-solid fa-face-smile-beam"></i>
+              <span class="fact-num">232</span>
+            </div>
+            <h5 class="fact-title my-2">Happy Clients</h5>
+            <span class="fact-text">consequuntur quae</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="fact-item my-3">
+            <div class="fact-head-box">
+              <i class="fa-solid fa-book"></i>
+              <span class="fact-num">521</span>
+            </div>
+            <h5 class="fact-title my-2">Projects</h5>
+            <span class="fact-text">adipisci atque cum quia aut</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="fact-item my-3">
+            <div class="fact-head-box">
+              <i class="fa-solid fa-headphones"></i>
+              <span class="fact-num">1453</span>
+            </div>
+            <h5 class="fact-title my-2">Hours Of Support</h5>
+            <span class="fact-text">aut commodi quaerat</span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="fact-item my-3">
+            <div class="fact-head-box">
+              <i class="fa-solid fa-users"></i>
+              <span class="fact-num">32</span>
+            </div>
+            <h5 class="fact-title my-2">Hard Workers</h5>
+            <span class="fact-text"
+              >rerum asperiores dolor consequuntur quaesss</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <section class="skills my-5" id="skills">
+      <div class="container">
+        <h3 class="sec-head">Skills</h3>
+        <p>
+          Since beginning my journey as a freelance designer nearly 10 years
+          ago, I've done remote work for agencies, consulted for startups, and
+          collaborated with talented people to create digital products for both
+          business and consumer use. I'm quietly confident, naturally curious,
+          and perpetually working on improving my chops one design problem at a
+          time.
+        </p>
+        <div class="skills-box row my-3">
+          <div class="col-lg-6 col-xs-12">
+            <div class="skill-item">
+              <span class="name">Html</span>
+              <div class="percent">
+                <span class="progress" style="width: 95%"></span>
+              </div>
+              <span class="value">95%</span>
+            </div>
+            <div class="skill-item">
+              <span class="name">Css</span>
+              <div class="percent">
+                <span class="progress" style="width: 90%"></span>
+              </div>
+              <span class="value">90%</span>
+            </div>
+            <div class="skill-item">
+              <span class="name">Javascript</span>
+              <div class="percent">
+                <span class="progress" style="width: 80%"></span>
+              </div>
+              <span class="value">80%</span>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <div class="skill-item">
+              <span class="name">Node.js</span>
+              <div class="percent">
+                <span class="progress" style="width: 70%"></span>
+              </div>
+              <span class="value">70%</span>
+            </div>
+            <div class="skill-item">
+              <span class="name">React</span>
+              <div class="percent">
+                <span class="progress" style="width: 85%"></span>
+              </div>
+              <span class="value">85%</span>
+            </div>
+            <div class="skill-item">
+              <span class="name">mongo.DB</span>
+              <div class="percent">
+                <span class="progress" style="width: 90%"></span>
+              </div>
+              <span class="value">90%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <section class="resume container my-5" id="resume">
+      <h3 class="sec-head">Resume</h3>
+      <p>
+        Since beginning my journey as a freelance designer nearly 10 years ago,
+        I've done remote work for agencies, consulted for startups, and
+        collaborated with talented people to create digital products for both
+        business and consumer use. I'm quietly confident, naturally curious, and
+        perpetually working on improving my chops one design problem at a time.
+      </p>
+      <div class="resume-block row">
+        <div class="col-lg-6 col-12">
+          <div class="resume-item">
+            <h4 class="nested-head">Summary</h4>
+            <div class="info-block">
+              <h5 class="item-title">ALEX SMITH</h5>
+              <p class="italic">
+                Innovative and deadline-driven Graphic Designer with 3+ years of
+                experience designing and developing user-centered digital/print
+                marketing material from initial concept to final, polished
+                deliverable.
+              </p>
+              <ul class="list">
+                <li>Portland par 127,Orlando, FL</li>
+                <li>(123) 456-7891</li>
+                <li>alice.barkley@example.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="resume-item">
+            <h4 class="nested-head">Education</h4>
+            <div class="info-block">
+              <h5 class="item-title">MASTER OF FINE ARTS & GRAPHIC DESIGN</h5>
+              <span class="date">2015 - 2016</span>
+              <p class="italic">
+                Rochester Institute of Technology, Rochester, NY
+              </p>
+              <p>
+                Innovative and deadline-driven Graphic Designer with 3+ years of
+                experience designing and developing user-centered digital/print
+                marketing material from initial concept to final, polished
+                deliverable.
+              </p>
+            </div>
+            <div class="info-block">
+              <h5 class="item-title">BACHELOR OF FINE ARTS & GRAPHIC DESIGN</h5>
+              <span class="date">2012 - 2014</span>
+              <p class="italic">
+                Rochester Institute of Technology, Rochester, NY
+              </p>
+              <p>
+                Innovative and deadline-driven Graphic Designer with 3+ years of
+                experience designing and developing user-centered digital/print
+                marketing material from initial concept to final, polished
+                deliverable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="resume-item">
+            <h4 class="nested-head">Professional Experience</h4>
+            <div class="info-block">
+              <h5 class="item-title">MASTER OF FINE ARTS & GRAPHIC DESIGN</h5>
+              <span class="date">2015 - Present</span>
+              <p class="italic">Experian, New York, NY</p>
+              <ul class="list">
+                <li>
+                  Lead in the design, development, and implementation of the
+                  graphic, layout, and production communication materials
+                </li>
+                <li>
+                  Delegate tasks to the 7 members of the design team and provide
+                  counsel on all aspects of the project.
+                </li>
+                <li>
+                  Supervise the assessment of all graphic materials in order to
+                  ensure quality and accuracy of the design
+                </li>
+                <li>
+                  Oversee the efficient use of production project budgets
+                  ranging from $2,000 - $25,000
+                </li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h5 class="item-title">GRAPHIC DESIGN SPECIALIST</h5>
+              <span class="date">2017 - 2018</span>
+              <p class="italic">Stepping Stone Advertising, New York, NY</p>
+              <ul class="list">
+                <li>
+                  Developed numerous marketing programs (logos,
+                  brochures,infographics, presentations, and advertisements).
+                </li>
+                <li>
+                  Managed up to 5 projects or tasks at a given time while under
+                  pressure
+                </li>
+                <li>
+                  Recommended and consulted with clients on the most appropriate
+                  graphic design
+                </li>
+                <li>
+                  Created 4+ design presentations and proposals a month for
+                  clients and account managers
+                </li>
+              </ul>
+              <p>
+                Innovative and deadline-driven Graphic Designer with 3+ years of
+                experience designing and developing user-centered digital/print
+                marketing material from initial concept to final, polished
+                deliverable
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <section class="portfolio my-5" id="portfolio">
+      <div class="container">
+        <h3 class="sec-head">Portfolio</h3>
+        <p>
+          Since beginning my journey as a freelance designer nearly 10 years
+          ago, I've done remote work for agencies, consulted for startups, and
+          collaborated with talented people to create digital products for both
+          business and consumer use. I'm quietly confident, naturally curious,
+          and perpetually working on improving my chops one design problem at a
+          time.
+        </p>
+        <div class="tabs-box">
+          <ul class="tabs">
+            <li class="portfolio-tab active" data-type=".all">All</li>
+            <li class="portfolio-tab" data-type=".graphic">Graphic</li>
+            <li class="portfolio-tab" data-type=".app">App</li>
+            <li class="portfolio-tab" data-type=".web">Web</li>
+          </ul>
+        </div>
+        <div class="portfolio-box row">
+          <div class="all graphic col-lg-3 col-6">
+            <img src="./assets/imgs/prt(1).png" alt="prt-item" />
+          </div>
+          <div class="all app col-lg-3 col-6">
+            <img src="./assets/imgs/prt(2).jpg" alt="prt-item" />
+          </div>
+          <div class="all app col-lg-3 col-6">
+            <img src="./assets/imgs/prt(9).jpg" alt="prt-item" />
+          </div>
+          <div class="all app col-lg-3 col-6">
+            <img src="./assets/imgs/prt(4).jpg" alt="prt-item" />
+          </div>
+          <div class="all graphic col-lg-3 col-6">
+            <img src="./assets/imgs/prt(5).jpg" alt="prt-item" />
+          </div>
+          <div class="all app col-lg-3 col-6">
+            <img src="./assets/imgs/prt(6).jpg" alt="prt-item" />
+          </div>
+          <div class="all web col-lg-3 col-6">
+            <img src="./assets/imgs/prt(7).jpg" alt="prt-item" />
+          </div>
+          <div class="all graphic col-lg-3 col-6">
+            <img src="./assets/imgs/prt(8).jpg" alt="prt-item" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <section class="services container my-5" id="services">
+      <h3 class="sec-head">Services</h3>
+      <p>
+        Since beginning my journey as a freelance designer nearly 10 years ago,
+        I've done remote work for agencies, consulted for startups, and
+        collaborated with talented people to create digital products for both
+        business and consumer use. I'm quietly confident, naturally curious, and
+        perpetually working on improving my chops one design problem at a time.
+      </p>
+      <div class="services-block">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-item">
+              <div class="serv-iconbox">
+                <i class="fa-solid fa-briefcase"></i>
+                <h5 class="nested-head">Lorem Ipsum</h5>
+              </div>
+              <div class="serv-textbox">
+                <p>
+                  Since beginning my journey as a freelance designer nearly 10
+                  years ago, I've done remote work for agencies, consulted for
+                  startups,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-item">
+              <div class="serv-iconbox">
+                <i class="fa-solid fa-shield"></i>
+                <h5 class="nested-head">Eiusmod Tempor</h5>
+              </div>
+              <div class="serv-textbox">
+                <p>
+                  Since beginning my journey as a freelance designer nearly 10
+                  years ago, I've done remote work for agencies, consulted for
+                  startups,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-item">
+              <div class="serv-iconbox">
+                <i class="fa-solid fa-server"></i>
+                <h5 class="nested-head">Nemo Enim</h5>
+              </div>
+              <div class="serv-textbox">
+                <p>
+                  Since beginning my journey as a freelance designer nearly 10
+                  years ago, I've done remote work for agencies, consulted for
+                  startups,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-item">
+              <div class="serv-iconbox">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h5 class="nested-head">Magni Dolores</h5>
+              </div>
+              <div class="serv-textbox">
+                <p>
+                  Since beginning my journey as a freelance designer nearly 10
+                  years ago, I've done remote work for agencies, consulted for
+                  startups,
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-item">
+              <div class="serv-iconbox">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h5 class="nested-head">Sed ut perspiciatis</h5>
+              </div>
+              <div class="serv-textbox">
+                <p>
+                  Since beginning my journey as a freelance designer nearly 10
+                  years ago, I've done remote work for agencies, consulted for
+                  startups,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="service-item">
+              <div class="serv-iconbox">
+                <i class="fa-solid fa-list"></i>
+                <h5 class="nested-head">Dolor Sitema</h5>
+              </div>
+              <div class="serv-textbox">
+                <p>
+                  Since beginning my journey as a freelance designer nearly 10
+                  years ago, I've done remote work for agencies, consulted for
+                  startups,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <section class="testimonials my-5" id="testimonials">
+      <div class="container">
+        <h3 class="sec-head">Testimonials</h3>
+        <p>
+          Since beginning my journey as a freelance designer nearly 10 years
+          ago, I've done remote work for agencies, consulted for startups, and
+          collaborated with talented people to create digital products for both
+          business and consumer use. I'm quietly confident, naturally curious,
+          and perpetually working on improving my chops one design problem at a
+          time.
+        </p>
+        <div class="tesm-carousel">
+          <div class="tesm-carousel-item carousel-item--1">
+            <div class="tesm-item">
+              <div class="tesm-textbox">
+                <p class="italic">
+                  <i class="fa-solid fa-quote-left"></i> Since beginning my
+                  journey as a freelance designer nearly 10 years ago, I've done
+                  remote work for agencies, consulted for startups, and
+                  collaborated with talented people to create digital products
+                  for both business and consumer use.<i
+                    class="fa-solid fa-quote-right"
+                  ></i>
+                </p>
+              </div>
+              <div class="tesm-personbox">
+                <div>
+                  <img
+                    src="./assets/imgs/testemonials.jpg"
+                    alt="testimonials"
+                  />
+                  <h4>Alex Smith</h4>
+                  <span>Freelancer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tesm-carousel-item carousel-item--2">
+            <div class="tesm-item">
+              <div class="tesm-textbox">
+                <p class="tesm-text">
+                  <i class="fa-solid fa-quote-left"></i> Since beginning my
+                  journey as a freelance designer nearly 10 years ago, I've done
+                  remote work for agencies, consulted for startups, and
+                  collaborated with talented people to create digital products
+                  for both business and consumer use.<i
+                    class="fa-solid fa-quote-right"
+                  ></i>
+                </p>
+              </div>
+              <div class="tesm-personbox">
+                <div>
+                  <img
+                    src="./assets/imgs/testemonials.jpg"
+                    alt="testimonials"
+                  />
+                  <h4>Alex Smith</h4>
+                  <span>Freelancer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tesm-carousel-item carousel-item--3">
+            <div class="tesm-item">
+              <div class="tesm-textbox">
+                <p class="tesm-text">
+                  <i class="fa-solid fa-quote-left"></i> Since beginning my
+                  journey as a freelance designer nearly 10 years ago, I've done
+                  remote work for agencies, consulted for startups, and
+                  collaborated with talented people to create digital products
+                  for both business and consumer use.<i
+                    class="fa-solid fa-quote-right"
+                  ></i>
+                </p>
+              </div>
+              <div class="tesm-personbox">
+                <div>
+                  <img
+                    src="./assets/imgs/testemonials.jpg"
+                    alt="testimonials"
+                  />
+                  <h4>Alex Smith</h4>
+                  <span>Freelancer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tesm-carousel-item carousel-item--4">
+            <div class="tesm-item">
+              <div class="tesm-textbox">
+                <p class="tesm-text">
+                  <i class="fa-solid fa-quote-left"></i> Since beginning my
+                  journey as a freelance designer nearly 10 years ago, I've done
+                  remote work for agencies, consulted for startups, and
+                  collaborated with talented people to create digital products
+                  for both business and consumer use.<i
+                    class="fa-solid fa-quote-right"
+                  ></i>
+                </p>
+              </div>
+              <div class="tesm-personbox">
+                <div>
+                  <img
+                    src="./assets/imgs/testemonials.jpg"
+                    alt="testimonials"
+                  />
+                  <h4>Alex Smith</h4>
+                  <span>Freelancer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tesm-carousel-item carousel-item--5">
+            <div class="tesm-item">
+              <div class="tesm-textbox">
+                <p class="tesm-text">
+                  <i class="fa-solid fa-quote-left"></i> Since beginning my
+                  journey as a freelance designer nearly 10 years ago, I've done
+                  remote work for agencies, consulted for startups, and
+                  collaborated with talented people to create digital products
+                  for both business and consumer use.<i
+                    class="fa-solid fa-quote-right"
+                  ></i>
+                </p>
+              </div>
+              <div class="tesm-personbox">
+                <div>
+                  <img
+                    src="./assets/imgs/testemonials.jpg"
+                    alt="testimonials"
+                  />
+                  <h4>Alex Smith</h4>
+                  <span>Freelancer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-btn--left">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="carousel-btn carousel-btn--right">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <section class="contact container my-5" id="contact">
+      <h3 class="sec-head">Contact</h3>
+      <p>
+        Since beginning my journey as a freelance designer nearly 10 years ago,
+        I've done remote work for agencies, consulted for startups, and
+        collaborated with talented people to create digital products for both
+        business and consumer use. I'm quietly confident, naturally curious, and
+        perpetually working on improving my chops one design problem at a time.
+      </p>
+      <div class="contact-box row g-4">
+        <div class="col-lg-4 col-12">
+          <div class="contact-info-block">
+            <ul class="contact-info-list">
+              <li class="contact-info-item">
+                <div class="icon-box">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="text-box">
+                  <h4>Location:</h4>
+                  <span>A108 Adam Street, New York, NY 535022</span>
+                </div>
+              </li>
+              <li class="contact-info-item">
+                <div class="icon-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="text-box">
+                  <h4>Email:</h4>
+                  <span>user@user.com</span>
+                </div>
+              </li>
+              <li class="contact-info-item">
+                <div class="icon-box">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="text-box">
+                  <h4>Location:</h4>
+                  <span>A108 Adam Street, New York, NY 535022</span>
+                </div>
+              </li>
+            </ul>
+            <div class="google-map">
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe
+                    width="300"
+                    height="300"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                  ></iframe
+                  ><a href="https://putlocker-is.org"></a><br /><style>
+                    .mapouter {
+                      position: relative;
+                      text-align: right;
+                      height: 300px;
+                      width: 300px;
+                    }</style
+                  ><a href="https://www.embedgooglemap.net"
+                    >how to add google map in wordpress</a
+                  ><style>
+                    .gmap_canvas {
+                      overflow: hidden;
+                      background: none !important;
+                      height: 300px;
+                      width: 300px;
+                    }
+                  </style>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form col-lg-8 col-12">
+          <div class="contact-form-box">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="form-item">
+                    <label for="Name">Name</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="form-item">
+                    <label for="Email">Email</label>
+                    <input type="Email" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="Subject">Subject</label>
+                <input type="text" />
+              </div>
+              <div class="form-item">
+                <label for="Subject">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <input type="submit" value="Send Message" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <footer>
+      <span>&copy; 2022 All Rights Reserved, Designed by OTM</span>
+    </footer>
+  </body>
+</html>

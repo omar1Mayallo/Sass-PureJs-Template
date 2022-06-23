@@ -1,0 +1,53 @@
+@use "../variables/variables" as *;
+@use "../config/config" as *;
+@use "../placeholders/placeholders" as *;
+
+.portfolio {
+  @extend %altBackgroundStyle;
+  .tabs-box {
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-inline: auto;
+    margin-bottom: 15px;
+    background-color: white;
+    .tabs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .portfolio-tab {
+        cursor: pointer;
+        &.active {
+          color: $alt-color;
+        }
+      }
+    }
+  }
+  .portfolio-box {
+    .all {
+      position: relative;
+      margin-bottom: 15px;
+      animation: showAnimation 0.3s ease none 1 alternate;
+      @keyframes showAnimation {
+        0% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      img {
+        width: 100%;
+        height: auto;
+        border: 10px solid whitesmoke;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

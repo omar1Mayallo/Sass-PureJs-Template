@@ -1,0 +1,28 @@
+@use "../variables/variables" as *;
+@use "../config/config" as *;
+@use "../placeholders/placeholders" as *;
+.services {
+  .service-item {
+    h5 {
+      text-transform: none;
+    }
+    .serv-iconbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      i {
+        transition: 0.3s;
+        font-size: 30px;
+        padding: 10px;
+        background: $alt-color;
+        border-radius: 100%;
+        color: white;
+        border: 1px solid $alt-color;
+        &:hover {
+          background-color: white;
+          color: $alt-color;
+        }
+      }
+    }
+  }
+}

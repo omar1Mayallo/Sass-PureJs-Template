@@ -1,0 +1,11 @@
+@use "../variables/variables" as *;
+@use "../config/config" as *;
+@use "../placeholders/placeholders" as *;
+
+footer {
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+  color: gray;
+  background-color: $main-color;
+}

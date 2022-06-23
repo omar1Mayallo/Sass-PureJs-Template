@@ -1,0 +1,89 @@
+@use "../variables/variables" as *;
+@use "../config/config" as *;
+@use "../placeholders/placeholders" as *;
+
+.contact-box {
+  .contact-info-block {
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+    padding: 20px;
+    .contact-info-list {
+      padding: 5px;
+      .contact-info-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        .icon-box {
+          i {
+            background-color: $alt-color;
+            border-radius: 100%;
+            transition: 0.3s;
+            font-size: 20px;
+            color: #fff;
+            padding: 10px;
+            border: 1px solid $alt-color;
+            &:hover {
+              color: $alt-color;
+              background-color: white;
+            }
+          }
+        }
+        .text-box {
+          h4 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #050d18;
+          }
+          span {
+            font-size: 13px;
+            color: gray;
+          }
+        }
+      }
+    }
+    .google-map {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .contact-form {
+    .contact-form-box {
+      box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+      padding: 20px;
+      .form-item {
+        label {
+          padding-bottom: 8px;
+          display: inline-block;
+        }
+        input,
+        textarea {
+          display: block;
+          font-size: 14px;
+          width: 100%;
+          margin-bottom: 20px;
+          outline: none;
+          &:focus {
+            border: 1px solid $alt-color;
+          }
+        }
+        input {
+          height: 44px;
+        }
+      }
+      input[type="submit"] {
+        font-size: 17px;
+        background: $alt-color;
+        border: none;
+        padding: 15px 20px;
+        color: white;
+        transition: 0.4s;
+        border-radius: 4px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}

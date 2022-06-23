@@ -1,0 +1,32 @@
+@use "../variables/variables" as *;
+@use "../config/config" as *;
+@use "../placeholders/placeholders" as *;
+
+.facts {
+  .fact-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .fact-head-box {
+      i {
+        font-size: 38px;
+        margin-right: 10px;
+        color: $alt-color;
+      }
+      .fact-num {
+        font: {
+          size: 38px;
+          weight: 800;
+        }
+      }
+    }
+    .fact-title {
+      font-size: 16px;
+      color: $nestedHead-color;
+    }
+    .fact-text {
+      font-size: 14px;
+      color: $lightText-color;
+    }
+  }
+}

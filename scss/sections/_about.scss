@@ -1,0 +1,37 @@
+@use "../variables/variables" as *;
+@use "../config/config" as *;
+@use "../placeholders/placeholders" as *;
+
+.about {
+  .info-block {
+    .img-identity {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .personal-identity {
+      .person-head {
+        @extend %NestedHeadStyle;
+        color: $mainHead-color;
+        margin: 0;
+      }
+      .identity-info {
+        .identity-list {
+          ul {
+            li {
+              margin-bottom: 15px;
+              i {
+                margin-right: 10px;
+                color: $alt-color;
+              }
+              span {
+                font-weight: 800;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

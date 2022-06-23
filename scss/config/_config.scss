@@ -1,0 +1,45 @@
+//Mixins
+@mixin overlay($color, $alpha, $zIdx) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($color, $alpha);
+  z-index: $zIdx;
+}
+@mixin fixedOverlay($color, $alpha, $zIdx) {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color, $alpha);
+  z-index: $zIdx;
+}
+@mixin translateNav($translateVal, $class) {
+  transition: all 0.5s;
+  transform: translateX($translateVal);
+  opacity: 0;
+  &.#{$class} {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+//Loops
+$i: 1;
+@while $i <= 10 {
+  .m-#{$i} {
+    margin: 0.5rem * $i;
+  }
+  .my-#{$i} {
+    margin-top: 0.5rem * $i;
+    margin-bottom: 0.5rem * $i;
+  }
+  .p-#{$i} {
+    padding: 0.5rem * $i;
+  }
+  .py-#{$i} {
+    padding-top: 0.5rem * $i;
+    padding-bottom: 0.5rem * $i;
+  }
+  $i: $i + 1;
+}

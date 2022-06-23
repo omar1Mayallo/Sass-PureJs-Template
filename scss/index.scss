@@ -1,0 +1,16 @@
+@use "./variables/variables" as *;
+@use "./config/config" as *;
+@use "./placeholders/placeholders" as *;
+////////////////////////////////////////////////////////
+@use "./global/globalRules" as *;
+@use "./sections/header";
+@use "./sections/about";
+@use "./sections/facts";
+@use "./sections/skills";
+@use "./sections/resume";
+@use "./sections/portfolio";
+@use "./sections/services";
+@use "./sections/testimonials";
+@use "./sections/contact";
+@use "./sections/footer";
+///////////////////////////////////////////////////////

@@ -1,0 +1,81 @@
+@use "../variables/variables" as *;
+@use "../config/config" as *;
+@use "../placeholders/placeholders" as *;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #272829;
+  line-height: 1.5;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $alt-color;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken($color: $alt-color, $amount: 10);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+p {
+  margin: 15px 0;
+  letter-spacing: 1.2px;
+  &.italic {
+    font-style: italic;
+  }
+}
+.menu-icon {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 10px;
+  background-color: $alt-color;
+  z-index: 100000;
+}
+.light-box {
+  display: none;
+  &.active {
+    @include fixedOverlay(#969696, 0.6, 999);
+    backdrop-filter: blur(2px);
+    @extend %flexCentering;
+  }
+  img {
+    border: 2px solid white;
+    box-shadow: 1px 3px 20px rgba(255, 255, 255, 0.5);
+  }
+}
+.nav-overlay {
+  top: 0;
+  left: 0;
+  @include fixedOverlay(#000, 0.6, 9999);
+  @include translateNav(-100%, "active");
+}
+.sec-head {
+  @extend %MainHeadStyle;
+}
+.nested-head {
+  @extend %NestedHeadStyle;
+}
