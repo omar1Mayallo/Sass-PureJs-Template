@@ -5,5 +5,5 @@ Designed By :
 - Pure Js
 
 
-Demo [here](https://omar1mayallo.github.io/Template-Alex-Portfolio-/).
+Demo [here](https://omar1mayallo.github.io/Sass-PureJs-Template/).
 
